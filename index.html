@@ -1,0 +1,597 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.structure-1.4.5.min.css"/>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+ -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+<body onLoad="MM_preloadImages('imagenes/Contaminacion en el mundo.jpg','imagenes/consecuencias_de_la_contaminación.jpg','imagenes/Reciclaje.jpg','imagenes/Limpieza.png','imagenes/Contaminacion_en_el_mundo.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1 align="center">LA CONTAMINACIÓN</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es la contaminación?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de la contaminación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas preventivas </h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación en mi entorno</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Propuesta para convatirla </h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="50" height="50">
+</div>
+<div>
+<h4> Aplicacion Tres</h4>
+<h4>Alondra Gaviota Romero Barojas</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Qué es la contaminación?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p align="left">La contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.</p>
+  <p align="left">Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</p>
+  <p align="left"><strong>Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica</strong>, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.</p>
+  <p align="left">La población humana crece según una progresión geométrica y la demanda de alimentos y necesidades básicas para la vida del hombre son cada vez mayores. El aumento en el consumo de diversos productos y desechos, provocados por  el ser humano, trae como consecuencia la generación de sustancias tóxicas.</p>
+  <p align="left">A continuacion te presentó algunas paginas de organizaciones que seran de gran ayuda:</p>
+  <p align="left"><a href="http://www.greenpeace.org/espana/es/" target="_self"><strong>Greenpeace</strong></a></p>
+  <p align="left"><strong><a href="http://www.nature.org/" target="_self">The nature conservancy</a></strong></p>
+  <h2>&nbsp;</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p></p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaminacion1','','imagenes/Contaminacion_en_el_mundo.jpg',1)"><img src="imagenes/contaminacion.jpg" name="contaminacion1" width="400" height="400" id="contaminacion1"></a></div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, AGRB</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Tipos de contaminación</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <h2 align="center"><strong>Contaminación del Agua</strong></h2>
+  <p align="left"> Es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.  </p>
+  <p align="left"><strong>¿Qué causa la contaminación del agua?</strong></p>
+  <div align="left">
+    <ul>
+      <li>Los residuos industriales se vierten en estos cuerpos de agua. Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.</li>
+    </ul>
+    <ul>
+      <li>Insecticidas, pesticidas y productos químicos de maduración que se utilizan en las plantas que se usan en el sistema de aguas subterráneas o arroyos cercanos.</li>
+    </ul>
+    <ul>
+      <li>Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada &ldquo;eutrofización&rdquo;, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable.</li>
+    </ul>
+    <ul>
+      <li>Derrames de petróleo&rsquo; son causados ​​cuando los buques petroleros gigantes y plataformas petrolíferas que están presentes en los océanos están dañadas por cualquiera tipo de error humano o natural causando un daño a largo tiempo para el océano. Como el petróleo es más ligero que el agua, flota sobre el agua formando una capa de bloqueo del luz del sol.</li>
+    </ul>
+    <ul>
+      <li>Ciertos desastres naturales como las inundaciones repentinas y los huracanes causan la entremezcla de agua con sustancias nocivas en la tierra.</li>
+    </ul>
+  </div>
+  <p align="left">Para la reparación de los daños que ya se ha hecho, las plantas de tratamiento de agua se construyen con técnicas innovadoras para limpiar el agua contaminada. Pero como siempre una cierta parte de los daños no se pueden resolver, por lo tanto, es mejor prevenir la contaminación del agua ya que esta es una necesidad básica para la supervivencia del hombre.</p>
+  <h2>&nbsp;</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del agua </h1>
+<div>
+<p></p>
+<img src="imagenes/contaminacion_del_agua.jpg" alt="agua " width="790" height="500" align="middle"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <h2 align="center"><strong>Contaminación del Aire</strong></h2>
+  <p align="left">El monóxido de carbono y óxido de azufre se consideran contaminantes primarios. Esto contaminantes sufren cambios químicos y causan efectos secundarios tales como smog. La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra.</p>
+  <h3 align="left">Causas</h3>
+  <p align="left">La quema de combustibles fósiles emite monóxido de carbono y óxido de azufre. Automóviles, autobuses, aviones y cualquier forma de gas como combustible de transporte emiten gases de monóxido de carbono a través de sistemas de escape. El dióxido de azufre se crea a través de la combustión de carbón, y está asociado con los residuos industriales. Los procesos de fabricación utilizan carbón como combustible, liberando dióxido de azufre en el aire a través de los sistemas de escape de fábrica.</p>
+  <h3 align="left">Efectos</h3>
+  <p align="left">La contaminación del aire es la fuente de smog, lluvia ácida y el posible calentamiento mundial. Smog se clasifica como niebla fotoquímica o industrial. Niebla fotoquímica, a menudo se evidencia por la nube marrón que cuelga sobre ciudades densamente pobladas, se crea por la interacción de la luz solar con moléculas de contaminantes primarios. La reacción química resultante es tóxico para los seres humanos y animales. El smog industrial se caracteriza por la niebla gris-marrón que se cierne sobre zonas industriales y se atribuye a la interacción de la luz solar, las moléculas de aire y dióxido de azufre. El resultado es, de nuevo, el aire tóxico.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del Aire</h1>
+<div>
+<p></p>
+<img src="imagenes/contaminacion_del_aire.jpg" alt="aire" width="948" height="534" align="middle"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <h2 align="center"><strong>Contaminación del Suelo</strong></h2>
+  <p align="left">Se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo, el exceso o déficit de humedad, disminución de la nutrientes para las plantas o microorganismos del suelo, y la fluctuación de la temperatura alta.</p>
+  <p align="left">La contaminación del suelo conduce naturalmente a la contaminación del aire por la liberación de estos compuestos en la atmósfera y que puedan explotar. La contaminación del suelo también contribuye a la contaminación del agua si las sustancias venenosas filtran a las aguas subterráneas, o si llega a desbordarse contaminado ríos, lagos u océanos.</p>
+  <h3 align="left"><strong>Causas de la Contaminación del Suelo</strong></h3>
+  <p align="left">Hay varias causas que conducen a la contaminación del suelo. Las principales fuentes de contaminación del suelo incluyen – la deforestación, los incendios forestales, la erosión del suelo, la erupción volcánica, el uso excesivo de fertilizantes químicos, pesticidas, herbicidas, etc, y el vertido de residuos industriales y urbanos.</p>
+  <h3 align="left"><strong>Efectos de la Contaminación del Suelo</strong></h3>
+  <p align="left">La contaminación del suelo afecta negativamente a los seres humanos como a los animales, ya que da lugar a disminución de la producción agrícola y la consecuente escasez de alimentos. Los fertilizantes químicos y pesticidas que se utilizan para aumentar la producción agrícola no sólo degradan el suelo debido a su uso excesivo, sino que también entran en la cadena alimentaria y afectan la salud de las personas que consumen el alimento.</p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación del suelo</h1>
+<div>
+<p></p>
+<img src="imagenes/contaminacion_del_suelo.jpg" width="932" height="522" alt="suelo"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <h2 align="center"><strong>Contaminación Radioactiva </strong></h2>
+  <p align="left">Los desechos radiactivos son generalmente subproductos de la generación de energía nuclear y otras aplicaciones de la fisión nuclear o tecnología nuclear, como la investigación y la medicina. Los residuos radiactivos son peligrosos para la salud humana y el medio ambiente, y está regulado por las agencias gubernamentales con el fin de proteger la salud humana y el medio ambiente.</p>
+  <p align="left">La contaminacion radioactiva disminuye con el tiempo, por lo que los residuos se aísla típicamente y se almacenan durante un período de tiempo hasta que ya no representa un peligro. El período de tiempo de residuos se deben almacenar depende del tipo de residuos. Bajo nivel de residuos con bajos niveles de radiactividad por masa o volumen (por ejemplo, algunos residuos comunes radiactivas médicas o industriales) puede ser necesario almacenar durante sólo unas horas, días o meses, mientras que residuos de alto nivel (como el combustible nuclear gastado o subproductos de reprocesamiento nuclear) deben ser almacenados durante miles de años. Actuales enfoques principales para la gestión de residuos radiactivos han habido separación y almacenamiento de residuos de vida corta, cerca de la superficie de eliminación de baja y algunos residuos de media, y el entierro profundo o transmutación de los de vida larga y de alto nivel residuos.</p>
+  <h3 align="left">Las causas de la contaminación radiactiva</h3>
+  <p align="left">Las siguientes son las principales fuentes de donde la mayoría de los residuos radiactivos se generan y es responsable de causar la contaminación radiactiva:</p>
+  <div></div>
+  <div align="left">
+    <ul>
+      <li>La producción de combustible nuclear</li>
+      <li>Reactores nucleares de potencia</li>
+      <li>El uso de radionucleidos en las industrias para diversas aplicaciones</li>
+      <li>Los ensayos nucleares llevados a cabo por personal de la defensa</li>
+      <li>La eliminación de los residuos nucleares</li>
+    </ul>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación Radioactiva</h1>
+<div>
+<p></p>
+<img src="imagenes/Contaminacion_radioactiva.jpg" width="555" height="347" alt="radioactiva"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <h2 align="center"><strong>Contaminación Térmica</strong></h2>
+  <p align="left">Es un hecho bien conocido que la quema de combustibles fósiles en centrales eléctricas, hornos industriales y motores de vehículos causa la contaminación del aire. Sin embargo, un menor impacto conocido asociado con estos procesos de generación de energía es la contaminación térmica. <strong>La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente</strong>, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.</p>
+  <h3 align="left">Efectos de la Contaminación térmica</h3>
+  <p align="left">El calor residual liberado por las plantas de energía añade al medio ambiente y afecta severamente sus habitantes. Dado que el agua caliente contiene menos oxígeno relativamente, muchas especies en estos hábitats enfrentan dificultades para sobrevivir. La torres de refrigeración utilizados en las centrales eléctricas liberan el calor directamente a la atmósfera, lo que eleva la temperatura del aire de manera drástica, lo que contribuye al calentamiento global.</p>
+  <p align="left">Calentamiento de agua debido a la contaminación térmica altera la ecología marina, en gran medida, más caliente el agua favorece a algunas especies, si bien es perjudicial para terceros. De una manera similar, durante el inicio de la planta nuclear, el apagado de reparación y mantenimiento y, a continuación inicio repentino crea cambios bruscos de temperatura en el agua contenidos en los lagos. Estos cambios bruscos de temperatura pueden ser letales para algunas especies acuáticas.</p>
+  <p align="left">Para saber más acerca del calentamiento global consulta la siguiente página:</p>
+  <p align="left"><strong><a href="http://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global" target="_self">CALENTAMIENTO GLOBAL</a></strong></p>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación Térmica</h1>
+<div>
+  <p></p>
+  <br>
+  </div>
+  <div><a><img src="imagenes/contaminacion_termica.jpg" width="515" height="306" alt="termica"></a>
+  </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, AGRB</h4>
+</div>
+</div>
+</div>
+</div>
+        
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONSECUENCIAS DE LA CONTAMINACIÓN</h1>
+  </div>
+    <div data-role="content" align="center">
+      <div>
+         <ul>
+           <li>
+             <div align="left"><strong>Problemas para la salud</strong>: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.</div>
+           </li>
+           <li>
+             <div align="left"><strong>Debilitamiento de la capa de ozono:</strong> la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.</div>
+           </li>
+           <li>
+             <div align="left"><strong>La contaminación afecta al suelo y al agua</strong>: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.</div>
+           </li>
+           <li>
+             <div align="left"><strong>La contaminación afecta al clima</strong>: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.</div>
+           </li>
+         </ul>
+        <h2>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+      <h1>Consecuencias de la contaminación</h1>
+      <div>
+        <p></p>
+        <br>
+        </div>
+      <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/consecuencias_de_la_contaminacion.jpg',1)"><img src="imagenes/consecuencias.jpg" width="372" height="255" id="Image17"></a> </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, AGRB</h4>
+  </div>
+</div>
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>RECICLAJE</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+        <h2>
+        <h2 align="left">Definición de reciclaje</h2>
+        <p align="left">El <strong>reciclaje</strong> consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta.</p>
+        <h2 align="left">El proceso del reciclaje</h2>
+        <p align="left">Todo este proceso del reciclaje, pasa por varias fases:</p>
+        <p align="left">El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia.</p>
+        <p align="left">En estas plantas, se almacenan y compactan grandes cantidades de residuos, para su posterior transporte en grandes cantidades hacia las plantas de reciclaje, llamadas plantas clasificadoras. Es aquí cuando se hace una separación exhaustiva de los residuos. En estas plantas, encontramos en algunos casos, las plantas de valoración, o reciclador final, donde se obtienen nuevas materias o productos, se almacenan los materiales en grandes vertederos, o bien se produce energía como es el caso de las plantas de biogas.</p>
+        <h2 align="left">Estrategia de tratamiento de residuos</h2>
+        <p align="left">El reciclaje, al margen de su complejo proceso de transformación, es uno de los puntos básicos de estrategia de tratamiento de residuos 3R.</p>
+        <h3 align="left">Reducir</h3>
+        <p align="left">Acciones para reducir la producción de objetos susceptibles de convertirse en residuos.</p>
+        <h3 align="left">Reutilizar</h3>
+        <p align="left">Acciones que permiten el volver a usar un producto para darle una segunda vida, con el mismo uso u otro diferente.</p>
+        <h3 align="left">Reciclar</h3>
+        <p align="left">El conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida.</p>
+        <p align="left">&nbsp;</p>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>RECICLAJE </h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/Reciclaje.jpg',1)"><img src="imagenes/simbolos_reciclaje.jpg" width="542" height="231" id="Image15"></a> </div>
+</div>
+</div>
+      </div>
+    </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion Tres, AGRB</h4>
+      </div>
+</div>
+      <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>MEDIDAS PREVENTIVAS </h1>
+    </div>
+    <h2><P>En los últimos días, los niveles de contaminación en la ciudad de México ha sobrepasado los límites del índice de calidad del aire. Esto provoca un peligro inminente para la salud de los habitantes, pues la niebla que invade a la ciudad posee componentes tóxicos que impacta negativamente en el cuerpo.</P>
+    <P>Sin embargo, hay ciertas acciones que uno puede realizar desde la cotidianidad y expandirlo de boca en boca. Por ello te compartimos las siguientes sencillas formas de reducir la contaminación </P>
+    <P>– Afina y da mantenimiento a los automóviles</P>
+    <p>– Evita quemar basura y llantas, así como el uso de cohetes artificiales</p>
+    <p>– Evita comprar artículos desechables y plásticos que no son biodegradables.</p>
+    <p>– Recicla la basura</p>
+    <p>– No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa</p>
+    <p>– Usa racionalmente los plaguicidas</p>
+    <p>– Evita el consumo de tabaco</p>
+    <p>– Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad</p>
+    <p>– Pospón las tareas de jardinería que requieran el uso de herramientas a gasolina en días de alto nivel de de ozono.</p>
+    <p>– Consume alimentos orgánicos o al menos aquellos no hayan sido sometidos a un uso tan intensivo de agroquímicos. (puedes cultivarlos en tú azotea con composta hecha por ti mismo)</p>
+    <p>– Restringe la limpieza en seco.</p>
+    <p>– Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono.</p>
+    <p>– Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</p>
+    <p>– Prende el carbón de leña con un encendedor eléctrico en vez de hacerlo con combustible líquido.</p>
+    <p>– Aplica el poder de las 3 Erres: Reduce-Reutiliza-Recicla. Un menor consumo redundará en menor contaminación atmosférica de todo tipo.</p>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Prevención</h1>
+<div>
+<p></p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/Limpieza.png',1)"><img src="imagenes/prevencion.jpg" width="596" height="419" id="Image" align="middle"></a>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, AGRB</h4>
+</div>
+</div>
+</div>
+</div>
+    
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CONTAMINACION EN MI ENTORNO</h1>
+</div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion.jpg" alt="Contaminacion" title="Contaminacion" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion_basura.jpg" alt="Contaminacion_basura" title="Contaminacion_basura" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion_campo.jpg" alt="Contaminacion_campo" title="Contaminacion_campo" id="wows1_2"/></li>
+		<li><img src="data1/images/contaminacin_de_escombro.jpg" alt="Contaminación_de_escombro" title="Contaminación_de_escombro" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacion_del_agua.jpg" alt="Contaminacion_del_agua" title="Contaminacion_del_agua" id="wows1_4"/></li>
+		<li><img src="data1/images/contaminacion_del_suelo.jpg" alt="Contaminacion_del_suelo" title="Contaminacion_del_suelo" id="wows1_5"/></li>
+		<li><img src="data1/images/contaminacion_en_areas_baldias.jpg" alt="Contaminacion_en_areas_baldias" title="Contaminacion_en_areas_baldias" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminacion_en_los_campos.jpg" alt="slider" title="Contaminacion_en_los_campos" id="wows1_7"/></a></li>
+		<li><img src="data1/images/contaminacin_escombro.jpg" alt="Contaminación_escombro" title="Contaminación_escombro" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Contaminacion"><span><img src="data1/tooltips/contaminacion.jpg" alt="Contaminacion"/>1</span></a>
+		<a href="#" title="Contaminacion_basura"><span><img src="data1/tooltips/contaminacion_basura.jpg" alt="Contaminacion_basura"/>2</span></a>
+		<a href="#" title="Contaminacion_campo"><span><img src="data1/tooltips/contaminacion_campo.jpg" alt="Contaminacion_campo"/>3</span></a>
+		<a href="#" title="Contaminación_de_escombro"><span><img src="data1/tooltips/contaminacin_de_escombro.jpg" alt="Contaminación_de_escombro"/>4</span></a>
+		<a href="#" title="Contaminacion_del_agua"><span><img src="data1/tooltips/contaminacion_del_agua.jpg" alt="Contaminacion_del_agua"/>5</span></a>
+		<a href="#" title="Contaminacion_del_suelo"><span><img src="data1/tooltips/contaminacion_del_suelo.jpg" alt="Contaminacion_del_suelo"/>6</span></a>
+		<a href="#" title="Contaminacion_en_areas_baldias"><span><img src="data1/tooltips/contaminacion_en_areas_baldias.jpg" alt="Contaminacion_en_areas_baldias"/>7</span></a>
+		<a href="#" title="Contaminacion_en_los_campos"><span><img src="data1/tooltips/contaminacion_en_los_campos.jpg" alt="Contaminacion_en_los_campos"/>8</span></a>
+		<a href="#" title="Contaminación_escombro"><span><img src="data1/tooltips/contaminacin_escombro.jpg" alt="Contaminación_escombro"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslideshow</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div data-role="content" align="center">
+<div>
+  <p align="left">El aumento continuo de la población, su concentración progresiva en grandes centros urbanos y el desarrollo industrial ocasionan, día a día, más problemas al medio ambiente conocidos como contaminación ambiental. Ésta consiste en la presencia de sustancias (basura, pesticidas, aguas sucias) extrañas de origen humano en el medio ambiente, ocasionando alteraciones en la estructura y el funcionamiento de los ecosistemas.</p>
+  <p align="left">Los efectos se manifiestan por las alteraciones en los ecosistemas; en la generación y propagación de enfermedades en los seres vivos, muerte masiva y, en casos extremos, la desaparición de especies animales y vegetales; inhibición de sistemas productivos y, en general, degradación de la calidad de vida (salud, aire puro, agua limpia, recreación, disfrute de la naturaleza, etc.).</p>
+  <div data-role="main" class="ui-content">
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, AGRB</h4>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Propuestas para convatir la contaminación </h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <ol>
+    <li>
+      <h3 align="left">SOLUCIONES PARA LA CONTAMINACIÓN AMBIENTAL</h3>
+    </li>
+  </ol>
+  <p align="left">En algunas ciudades, es dificultoso hasta respirar debido a los niveles de contaminación ambiental. Y se ha convertido hasta normal que el humo se encuentre por todos lados. Es por esta razón que vamos a mostrar algunas alternativas:</p>
+  <div align="left">
+    <ul>
+      <li>Crear una red de transporte público eficiente. Estos deben emitir menos CO2 y que no circulen más autobuses de lo necesario.</li>
+      <li>Utilizar automóviles eléctricos. Estos no liberan emisión al ambiente y son de buena duración.</li>
+      <li>Mantener el coche en buenas condiciones. Ya que al no funcionar correctamente tiende a contaminar más.</li>
+      <li>Usar otras alternativas de movilización. Como caminar, usar bicicleta, patineta, etc.</li>
+      <li>Utilizar bolsas de tela. Evita consumir las bolsas de plástico ya que tardan más en desintegrarse.  </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Propuesta #1</h1>
+<div>
+<p></p>
+<img src="imagenes/solucion_para_la_contaminacion.jpg" width="620" height="330" alt="propuesta"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <ol start="2">
+    <li>
+      <h3 align="left">SOLUCIONES PARA LA CONTAMINACIÓN OCEÁNICA</h3>
+    </li>
+  </ol>
+  <p align="left">Muchas especies marinas se encuentran en peligro de extinción debido a la contaminación oceánica, en algunos años seguramente ya no veremos a ningún si se sigue contaminando y no se busca soluciones. Si quieres evitar que los seres marinos se extingan, evita contaminar el agua.</p>
+  <div align="left">
+    <ul>
+      <li>Respetar las vedas. Son restricciones establecidas para garantizar la reproducción de las especies y que estén disponibles para el futuro.</li>
+      <li>No arrojar basura en las playas</li>
+      <li>Evitar tirar aceite por el desagüe, tras freír. Un litro de aceite contamina 100 000 litros de agua.</li>
+      <li>No desperdiciar agua. Cierra los caños, mientras haces otras acciones.  </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Propuesta #2</h1>
+<div>
+<p></p>
+<img src="imagenes/solucion_para_la_contaminacion_oceanica.jpg" width="500" height="350" alt="oceano"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <ol start="3">
+    <li>
+      <h3 align="left">SOLUCIONES A LA CONTAMINACIÓN INDUSTRIAL</h3>
+    </li>
+  </ol>
+  <p align="left">Las industrias necesitan mucha cantidad de agua para que funcionen sus frigoríficos, maquinas, etc. Y muchos de ellos llevan consigo desechos de fábricas, que deberían ser depuradas pero lamentablemente no lo hacen y generan contaminación en gran volumen. De hecho las industrias son las más contaminantes.</p>
+  <div></div>
+  <div align="left">
+    <ul>
+      <li>Implementar políticas de responsabilidad del fabricante del producto</li>
+      <li>Eliminar o prohibir de forma progresiva los productos tóxicos o que tengan medidas básicas para evitar la contaminación.</li>
+      <li>Influir en el mercado en la compra de productos no contaminantes.</li>
+      <li>Dictar leyes de prevención de contaminación hacia la industrias</li>
+    </ul>
+  </div>
+  <ul>
+  </ul>
+  <h2 align="center">&nbsp;</h2>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Propuesta #3</h1>
+<div>
+<p></p>
+<img src="imagenes/contaminacion_industrial.jpg" width="500" height="350" alt="industrial"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <ol start="4">
+    <li>
+      <h3 align="left">SOLUCIONES A LA CONTAMINACIÓN DEL SUELO</h3>
+    </li>
+  </ol>
+  <p align="left">Las actividades antropogenicos están generando un impacto negativo en el medio ambiente, y el suelo está siendo el más afectado. El suelo es muy importante para los humanos ya que en éste ocurren diferentes interacciones biológicas. Muchas veces la contaminación se da por parte de la minería ilegal.</p>
+  <div align="left">
+    <ul>
+      <li>Si tiene un huerto, evita utilizar funguicidas o plaguicidas. Produce tu propio abono.</li>
+      <li>No quemar la basura, ni menos tirarla en botaderos.</li>
+      <li>Clasificando los residuos con orgánicos, plásticos, metales, papeles, tóxicos, etc.</li>
+      <li>Concientizar a los vecinos en propagar la importancia del suelo.  </li>
+    </ul>
+  </div>
+  <div align="left">  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Propuesta #4</h1>
+<div>
+<p></p>
+<img src="imagenes/Soluciones_a_la_contaminacion_del_suelo.jpg" width="500" height="350" alt="suelo"><br>
+</div>
+<div></div>
+</div>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <ol start="5">
+    <li>
+      <h3 align="left">SOLUCIONES A LA CONTAMINACIÓN ACÚSTICA</h3>
+    </li>
+  </ol>
+  <p align="left">La contaminación acústica son las vibraciones o ruidos que impliquen molestias, daño o riesgo a las personas para desarrollar sus actividades o para los bienes de las naturales, que provoquen efectos significativos sobre el medio ambiente.</p>
+  <div align="left">
+    <ul>
+      <li>Evitar el uso de los vehículos a motor</li>
+      <li>Evitar las actividades ruidosas</li>
+      <li>Escuchar música con un volumen normal</li>
+      <li>Evitar utilizar los fuegos artificiales  </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Propuesta #5</h1>
+<div>
+  <p></p>
+  <img src="imagenes/Soluciones_a_la_contaminacion_acustica.jpg" width="500" height="350" alt="acustica "><br>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, AGRB</h4>
+</div>
+</div>
+</div>
+</div>
+
+    
+</html>
